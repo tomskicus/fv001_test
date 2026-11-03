@@ -49,7 +49,7 @@ auto top10_ctr(const std::vector<Record>& record_vec) -> std::vector<Record>
 {
     auto less = [](const auto& lhs, const auto& rhs)
     {
-        return compare_float(lhs.ctr, lhs.ctr) < 0;
+        return compare_float(lhs.ctr, rhs.ctr) < 0;
     };
 
     auto tmp_record_vec = record_vec;
